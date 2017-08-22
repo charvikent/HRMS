@@ -80,7 +80,5 @@
 		<!-- It is for fileupload -->
 		<bean id="multipartResolver"  
   class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />  
-  	
-  
   
 </beans>

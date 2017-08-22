@@ -579,7 +579,7 @@ public class EmployController {
 		String sJson = "";
 		String baseUrl = MiscUtils.getBaseUrl(request);
 		try{
-			UsersBean objuserBean = (UsersBean) session.getAttribute("cacheUserBean");
+			UsersBean objuserBean = HRMSUtil.getLoginSession(session);
 			if (objuserBean != null) {
 				empBean.setEmp_id(objuserBean.getEmpId());
 			}
