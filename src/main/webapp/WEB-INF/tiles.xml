@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/Home/home.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/Home/header.jsp" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/Home/menu.jsp" /> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/Home/footer.jsp" />
+
+	</definition>
+
+	<!-- Login -->
+	<definition name="loginHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/login.jsp" />
+	</definition>
+	<!-- <definition name="partnerLoginHome" extends="base.definition"> <put-attribute 
+		name="body" value="/WEB-INF/pages/partnerLogin.jsp" /> </definition> -->
+	<!-- Exception page -->
+
+	<definition name="DepartmentHome" extends="base.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/pages/departmentCreation.jsp" />
+	</definition>
+	<!-- <definition name="DepartmentHierarchical" extends="base.definition"> 
+		<put-attribute name="body" value="/WEB-INF/pages/DepartmentHierarchical.jsp" 
+		/> </definition> -->
+	<definition name="HolidayHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/holidayHome.jsp" />
+	</definition>
+	<definition name="DesignationHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/DesignationHome.jsp" />
+	</definition>
+	
+
+
+<definition name="employeeHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/employeeHome.jsp" />
+	</definition>
+<definition name="timeLogsHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/timeLogsHome.jsp" />
+	</definition>
+	<definition name="timeSheetHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/timeSheetHome.jsp" />
+	</definition>
+	
+	<definition name="jobsHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/jobsHome.jsp" />
+	</definition>
+	<definition name="ProjectHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/projectsHome.jsp" />
+	</definition>
+	<definition name="clientHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/clientHome.jsp" />
+	</definition>
+	<definition name="AttendanceHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/attendanceHome.jsp" />
+	</definition>
+	
+	<definition name="CalendarHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/calendarHome.jsp" />
+	</definition>
+	<definition name="groupsHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/groupsHome.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>
+
+
